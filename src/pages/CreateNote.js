@@ -28,7 +28,7 @@ export default function CreateNote({setNotes}) {
     return (
         <section>
             <header className="create-note__header">
-                <Link to="/" className="btn" ><IoIosArrowBack /></Link>
+                <Link to="/" className="btn arrowBack" ><IoIosArrowBack /></Link>
                 <button className='btn lg primary' onClick={handleSubmit}>Add Notes</button>
             </header>
 

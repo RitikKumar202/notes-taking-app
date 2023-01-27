@@ -14,8 +14,8 @@
     --color-bg-dark: #3a3a3a;
     --color-bg-black: #111111;
     --color-white: #fefefe;
-    --color-primary: #7634d8;
-    --color-danger: rgb(249, 84, 84);
+    --color-primary: #31326f;
+    --color-danger: #f23535;
 }
 
 body {
@@ -24,23 +24,29 @@ body {
     justify-content: center;
     align-items: center;
     color: var(--color-white);
-    background: #ccc;
+    background: var(--color-bg-black);
     line-height: 1.5;
 }
 
 .btn {
-    background: var(--color-bg-dark);
+    background: var(--color-white);
     border-radius: 0.8rem;
     padding: 0.8rem;
     font-size: 1.6rem;
-    color: var(--color-white);
+    color: var(--color-bg-black);
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
     transition: all 300ms ease;
+}
+
+.btn.arrowBack {
+    color: var(--color-white);
+    background: var(--color-bg-black);
 }
 
 .btn.lg {
     padding: 0.8rem 1.5rem;
     font-size: 1.2rem;
+    color: var(--color-white);
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.4);
 }
 
@@ -58,9 +64,9 @@ body {
 }
 
 #app {
-    background: var(--color-bg-black);
+    background: #ccc;
     height: 48rem;
-    width: 24rem;
+    width: 30rem;
     padding: 2rem 1.6rem;
     overflow-y: scroll;
     position: relative;
@@ -85,9 +91,14 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 1.6rem 1.5rem;
-    background: var(--color-bg-black);
+    padding: 0 1.6rem 1.5rem 0;
+    background: #ccc;
     z-index: 9;
+}
+
+.notes__header h2 {
+    color: var(--color-bg-black);
+    font-weight: 600;
 }
 
 
@@ -126,6 +137,14 @@ h2 {
     color: var(--color-white);
 }
 
+.note .desc {
+    margin-top: -12px;
+}
+
+.note .date {
+    color: #80fc4f;
+}
+
 .note:hover {
     opacity: 0.9;
 }
@@ -152,6 +171,7 @@ h2 {
     bottom: 4rem;
     right: 7rem;
     padding: 1rem;
+    background: #ccc;
 }
 
 
@@ -176,7 +196,11 @@ h2 {
     background: transparent;
     border-radius: 0.2rem;
     font-size: 1.1rem;
-    color: var(--color-white);
+    color: var(--color-bg-black);
+}
+
+.create-note__form textarea {
+    color: var(--color-bg-dark);
 }
 
 .create-note__form input {
@@ -210,5 +234,7 @@ h2 {
         font-size: 1.5rem;
         bottom: 6%;
         right: 2rem;
+        color: #ccc;
+        background: var(--color-bg-black);
     }
 }
