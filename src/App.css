@@ -350,7 +350,7 @@ input {
     padding: 20px 10px;
 }
 
-bi bi-lightbulb .heading-con {
+.heading-con {
     display: flex;
     justify-content: center;
     margin: 25px 0px;
@@ -367,25 +367,20 @@ bi bi-lightbulb .heading-con {
 /* Media Queries */
 
 @media screen and (max-width: 765px) {
-
     .edit-note-form,
     .note-form {
         width: 85%;
     }
-
     .search-bar {
         display: none;
     }
-
     .mobile-search {
         display: flex;
         justify-content: space-around;
     }
-
     .menu-icon {
         display: block;
     }
-
     .nav__cont {
         display: none;
     }
