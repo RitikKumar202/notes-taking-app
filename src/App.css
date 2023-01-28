@@ -1,0 +1,398 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input {
+    outline: none;
+}
+
+
+/* Components */
+
+
+/* ------Header----- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.brand img,
+i,
+h4 {
+    margin: 0px 5px;
+    color: #606469;
+}
+
+.brand h4 {
+    margin: 1px 7px;
+}
+
+.brand h4:hover {
+    text-decoration: underline;
+}
+
+.brand img {
+    width: 38px;
+    height: 38px;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user h6 {
+    margin: 0px 10px;
+    color: #606469;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ------Search Bar----- */
+
+.search {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
+}
+
+.mobile-search {
+    display: none;
+    margin-top: 10px;
+    width: auto;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.search i {
+    color: #606469;
+}
+
+.search input {
+    border: none;
+    margin-left: 10px;
+}
+
+.search input::placeholder {
+    color: #606469;
+}
+
+
+/* Navbar */
+
+.nav__cont {
+    position: fixed;
+    width: 40px;
+    top: 50px;
+    height: 100vh;
+    overflow: hidden;
+    transition: width 0.3s ease;
+    cursor: pointer;
+}
+
+.nav__cont:hover {
+    width: 150px;
+}
+
+.nav {
+    list-style-type: none;
+    color: white;
+}
+
+.nav:first-child {
+    padding-top: 1.5rem;
+}
+
+.nav__items {
+    display: flex;
+    font-family: 'roboto';
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav__items p {
+    position: relative;
+    top: 7px;
+    left: 20px;
+    padding: 0px 20px;
+    transition: all 0.3s ease;
+    color: #606469;
+    font-family: 'roboto';
+    border-bottom: none !important;
+    font-size: 20px;
+}
+
+.nav__items p:after {
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 20px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: all 0.5s ease;
+    z-index: -10;
+}
+
+.nav__items:hover p:after {
+    opacity: 1;
+}
+
+.nav__items i {
+    position: relative;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+/* Navbar */
+
+
+/* Mobile Navbar */
+
+.menu-icon {
+    display: none;
+}
+
+.menu-item {
+    border-bottom: 1px solid #a1a6ac;
+    text-align: center;
+    color: #606469;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid rgb(243, 206, 40);
+    color: rgb(243, 206, 40);
+}
+
+
+/* Mobile Navbar */
+
+
+/* Note  */
+
+#note {
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid #e3e8eb;
+    border-radius: 10px;
+}
+
+.text {
+    display: block;
+    max-width: 250px;
+    word-break: break-all;
+    /* optional */
+}
+
+.icons-container {
+    display: flex;
+    padding: 5px;
+}
+
+.icons-container div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note-icon {
+    width: 17px;
+    height: 17px;
+    color: #252627;
+}
+
+
+/* Note  */
+
+
+/* Note form */
+
+.note-form-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.note-form {
+    opacity: 0.9;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
+}
+
+.edit-note-form {
+    opacity: 0.9;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: #252627;
+}
+
+textarea::placeholder {
+    color: #252627;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    padding-top: 2px;
+    display: block;
+    outline: none;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+.show {
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 2px 3px 4px 2px #dfe4e7;
+}
+
+.hide {
+    display: none;
+}
+
+.submit {
+    outline: none;
+    padding: 0px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(243, 206, 40);
+}
+
+.submit:hover {
+    opacity: 0.7;
+}
+
+
+/* Note form */
+
+
+/* Edit Modal */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(129, 127, 127, 0.4);
+}
+
+
+/* Edit Model */
+
+
+/* Check */
+
+.check {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.check input {
+    background: #a1a6ac;
+}
+
+
+/* Check */
+
+
+/* Containers */
+
+.container {
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 17px;
+    color: #606469;
+}
+
+.row {
+    padding: 20px 10px;
+}
+
+bi bi-lightbulb .heading-con {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.heading-con h1 {
+    color: #606469;
+}
+
+
+/* Containers */
+
+
+/* Media Queries */
+
+@media screen and (max-width: 765px) {
+
+    .edit-note-form,
+    .note-form {
+        width: 85%;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .mobile-search {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav__cont {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .search {
+        width: auto;
+    }
+}
