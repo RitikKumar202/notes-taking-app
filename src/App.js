@@ -1,11 +1,16 @@
-import Home from './components/Home';
-import DataProvider from './context/DataProvider';
+import './App.css';
+
+// Note Context
+import ContextProvider from './context/Context';
+
+//React Components
+import Navigation from './navigation/Navigation';
 
 function App() {
   return (
-    <DataProvider>
-      <Home />
-    </DataProvider>
+    <ContextProvider>
+      <Navigation />
+    </ContextProvider>
   );
 }
 
