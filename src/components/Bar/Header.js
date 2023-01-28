@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 
 // Styled Components
 import { BiMenu } from 'react-icons/bi';
@@ -48,9 +47,9 @@ const Header = () => {
             Bin
           </Link>
         </div>
-        {/* <div className='mobile-search'>
+        <div className='mobile-search'>
           <SearchBar />
-        </div> */}
+        </div>
       </div>
 
       <nav className='nav__cont'>

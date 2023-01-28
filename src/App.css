@@ -367,25 +367,20 @@ input {
 /* Media Queries */
 
 @media screen and (max-width: 765px) {
-
     .edit-note-form,
     .note-form {
         width: 85%;
     }
-
     .search-bar {
         display: none;
     }
-
     .mobile-search {
         display: flex;
         justify-content: space-around;
     }
-
     .menu-icon {
         display: block;
     }
-
     .nav__cont {
         display: none;
     }
