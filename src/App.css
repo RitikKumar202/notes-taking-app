@@ -350,7 +350,7 @@ input {
     padding: 20px 10px;
 }
 
-bi bi-lightbulb .heading-con {
+.heading-con {
     display: flex;
     justify-content: center;
     margin: 25px 0px;
