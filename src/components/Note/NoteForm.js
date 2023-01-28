@@ -7,7 +7,7 @@ import { CirclePicker } from 'react-color';
 import { RiPushpin2Fill, RiPushpin2Line } from 'react-icons/ri';
 import { BiArchiveIn, BiArchiveOut } from 'react-icons/bi';
 import { IoColorPaletteOutline } from 'react-icons/io5';
-import { AiOutlinePlusSquare, AiOutlineMinusSquare } from 'react-icons/ai';
+// import { AiOutlinePlusSquare, AiOutlineMinusSquare } from 'react-icons/ai';
 
 // Unique uid generator
 import { v4 as uuidv4 } from 'uuid';

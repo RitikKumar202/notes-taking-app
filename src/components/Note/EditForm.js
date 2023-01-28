@@ -36,7 +36,7 @@ const EditForm = (props) => {
   const [showPicker, setShowPicker] = useState(false);
   const [noteText, setNoteText] = useState(noteTxt);
   const [addChecklist, setAddChecklist] = useState(props.checkList);
-  const [checkArray, setCheckArray] = useState([]);
+  // const [checkArray, setCheckArray] = useState([]);
 
   // Edit Function
   const Edit = () => {
@@ -56,7 +56,7 @@ const EditForm = (props) => {
               check: note[i].check,
             };
           } else {
-            var obj = {
+            obj = {
               id: uuidv4(),
               subnote: noteArray[i],
               check: false,
