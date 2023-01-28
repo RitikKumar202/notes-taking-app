@@ -2,10 +2,12 @@ import React, { useContext, useState } from 'react';
 
 // Styled Components
 import { CirclePicker } from 'react-color';
+import { FaFileImage } from "react-icons/fa";
+import { FaPaintBrush } from "react-icons/fa";
 
 // Icons
 import { RiPushpin2Fill, RiPushpin2Line } from 'react-icons/ri';
-import { BiArchiveIn, BiArchiveOut } from 'react-icons/bi';
+// import { BiArchiveIn, BiArchiveOut } from 'react-icons/bi';
 import { IoColorPaletteOutline } from 'react-icons/io5';
 // import { AiOutlinePlusSquare, AiOutlineMinusSquare } from 'react-icons/ai';
 
@@ -22,11 +24,13 @@ const NoteForm = () => {
   // Creating Context
   const [title, setTitle] = useState('');
   const [note, setNote] = useState('');
+  const [image, setImage] = useState("");
   const [pin, setPin] = useState(false);
   const [archive, setArchive] = useState(false);
   const [color, setColor] = useState('#fff');
   const [showPicker, setShowPicker] = useState(false);
   const [addChecklist, setAddChecklist] = useState(false);
+
 
   // Add Note Function
   const Submit = () => {
@@ -95,13 +99,13 @@ const NoteForm = () => {
             )}
           </div>
 
-          <div onClick={() => setArchive(!archive)}>
+          {/* <div onClick={() => setArchive(!archive)}>
             {archive ? (
               <BiArchiveOut className='note-icon' />
             ) : (
               <BiArchiveIn className='note-icon' />
             )}
-          </div>
+          </div> */}
           {/* {addChecklist ? (
             <div onClick={() => setAddChecklist(!addChecklist)}>
               <AiOutlineMinusSquare className='note-icon' />
@@ -111,6 +115,21 @@ const NoteForm = () => {
               <AiOutlinePlusSquare className='note-icon' />
             </div>
           )} */}
+          <div onClick={() => setImage(!image)}>
+            {image ? (
+              <FaFileImage className='note-icon' />
+            ) : (
+              <FaFileImage className='note-icon' />
+            )}
+          </div>
+
+          <div onClick={() => setImage(!image)}>
+            {image ? (
+              <FaPaintBrush className='note-icon' />
+            ) : (
+              <FaPaintBrush className='note-icon' />
+            )}
+          </div>
 
           <div>
             <IoColorPaletteOutline
