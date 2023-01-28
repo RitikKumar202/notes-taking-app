@@ -1,13 +1,21 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect} from 'react';
 
 // Context Creating using createContext
 export const NoteContext = createContext();
 export const NoteActionContext = createContext();
 
 const NoteContextProvider = (props) => {
-  const [notes, setNotes] = useState([]);
-  const [deletedNotes, setDeletedNotes] = useState([]);
+  const [notes, setNotes] = useState(JSON.parse(localStorage.getItem('notes')) || []);
+  const [deletedNotes, setDeletedNotes] = useState(JSON.parse(localStorage.getItem('deletedNotes')) || []);
   const [searchedNotes, setSearchedNotes] = useState([]);
+
+  useEffect(() =>{
+    localStorage.setItem('notes', JSON.stringify(notes))
+  }, [notes])
+
+  useEffect(() =>{
+    localStorage.setItem('deletedNotes', JSON.stringify(deletedNotes))
+  }, [deletedNotes])
 
   // Add Note Functionality
   const addNote = (obj) => {

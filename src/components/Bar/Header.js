@@ -26,7 +26,7 @@ const Header = () => {
               size={25}
             />
             <img src={Logo} alt='Logo' />
-            <h4>Notes Making App</h4>
+            <h4>Notes Taking App</h4>
           </div>
           <div className='search-bar'>
             <SearchBar />

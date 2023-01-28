@@ -30,7 +30,7 @@ const NoteForm = () => {
 
   // Add Note Function
   const Submit = () => {
-    if (title !== '' || note !== '') {
+    if (title !== '' && note !== '') {
       let newArray = [];
       let id = uuidv4();
       if (note !== '') {
@@ -56,7 +56,7 @@ const NoteForm = () => {
       addNote(obj);
       resetForm();
     } else {
-      alert('Title or Note is a required field');
+      alert('Title and Description is a required field');
     }
   };
 
@@ -75,14 +75,14 @@ const NoteForm = () => {
         style={{ background: color }}
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        placeholder='Title'
+        placeholder='Note Title'
       />
 
       <textarea
         style={{ background: color }}
         value={note}
         onChange={(e) => setNote(e.target.value)}
-        placeholder='Take a note'
+        placeholder='Note Description...'
       />
 
       <div style={{ display: 'flex', justifyContent: 'space-between' }}>

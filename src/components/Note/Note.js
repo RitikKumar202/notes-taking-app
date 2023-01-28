@@ -65,7 +65,7 @@ const Note = (props) => {
     <div style={{ padding: '10px' }} className='col-lg-3 col-md-6 col-sm-12'>
       <div id='note' style={{ background: bgColor }}>
         <div className='text'>
-          <h6>{title}</h6>
+          <h4>{title}</h4>
         </div>
         {note.length >= 0 ? (
           checkList ? (

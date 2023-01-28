@@ -156,7 +156,7 @@ const EditForm = (props) => {
         </div>
 
         <button className='submit' onClick={Edit}>
-          Edit
+          Update Note
         </button>
       </div>
     </div>
