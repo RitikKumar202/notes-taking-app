@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Krub:wght@300;400;500&family=Lora:ital,wght@1,400;1,500;1,600&family=Poppins:wght@100;200;300;400;500;600&family=Ubuntu:ital,wght@1,300;1,400&family=Varela+Round&display=swap');
 * {
-    font-family: 'Kanit', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: paleturquoise;            
 }
 
 input {
@@ -9,69 +10,87 @@ input {
 
 
 /* Components */
-
+.body{
+    background-color: paleturquoise;
+    color: aqua;
+}
 
 /* ------Header----- */
 
 .header {
+    background-color: blueviolet;
     display: flex;
     justify-content: space-between;
     padding: 15px 25px;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-bottom: 1px solid #f1f3f4;
 }
 
 .brand {
+    background-color: lightgreen;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 2px 2px 2px 2px #edf1f0;
+    border-radius: 8px;
 }
 
 .brand img,
 i,
 h4 {
-    margin: 0px 5px;
-    color: #606469;
+
+    background-color: lightgreen;
+    margin: 2px 5px;
+    color: black;
 }
 
 .brand h4 {
-    margin: 1px 7px;
+    /* background-color: lightgreen; */
+    margin: 2px 7px;
 }
 
 .brand h4:hover {
+    /* background-color: lightgreen; */
     text-decoration: underline;
 }
 
 .brand img {
+    /* background-color: lightgreen; */
     width: 38px;
     height: 38px;
 }
 
 .user {
+    background-color: lightgreen;
     display: flex;
     justify-content: flex-end;
 }
 
 .user h6 {
+    /* background-color: lightgreen; */
     margin: 0px 10px;
     color: #606469;
 }
 
 .search-bar {
+    background-color: lightgreen;
     display: flex;
     justify-content: center;
+    border-radius: 8px;
 }
 
 
 /* ------Search Bar----- */
 
 .search {
-    width: 700px;
+    /* height: 10px; */
+    background-color: lightgreen;
+    width: 400px;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
 }
 
 .mobile-search {
@@ -83,42 +102,51 @@ h4 {
 }
 
 .search i {
-    color: #606469;
+    color: black;
 }
 
 .search input {
-    border: none;
-    margin-left: 10px;
+    /* border: none; */
+    /* height: 41px; */
+    margin-left: 8px;
+    background-color: whitesmoke;
 }
 
 .search input::placeholder {
-    color: #606469;
+    /* background-color: lightgreen; */
+    color: blueviolet;
+    height: 150px;
 }
 
 
 /* Navbar */
 
 .nav__cont {
+    box-shadow: 2px 3px 4px 2px black;
+    color: black;
+    /* background-color: grey; */
     position: fixed;
-    width: 40px;
-    top: 50px;
+    width: 60px;
+    top: 75px;
     height: 100vh;
     overflow: hidden;
-    transition: width 0.3s ease;
+    transition: width 0.7s ease;
     cursor: pointer;
 }
 
 .nav__cont:hover {
+    /* background-color: grey; */
     width: 150px;
 }
 
 .nav {
     list-style-type: none;
-    color: white;
+    /* color: blue; */
 }
 
 .nav:first-child {
-    padding-top: 1.5rem;
+    padding-top: 1.2rem;
+    /* padding-bottom: 5.3rem */
 }
 
 .nav__items {
@@ -126,33 +154,35 @@ h4 {
     font-family: 'roboto';
     align-items: center;
     justify-content: flex-start;
+    /* color: green; */
 }
 
 .nav__items p {
     position: relative;
-    top: 7px;
-    left: 20px;
-    padding: 0px 20px;
-    transition: all 0.3s ease;
-    color: #606469;
+    top: 8px;
+    left: 19px;
+    padding: 10px 20px;
+    transition: all 0.8s ease;
+    color: black;
     font-family: 'roboto';
     border-bottom: none !important;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .nav__items p:after {
     content: '';
-    width: 100%;
-    top: 0;
-    left: 20px;
-    border-radius: 2px;
-    opacity: 0;
-    transition: all 0.5s ease;
-    z-index: -10;
+    /* width: 100%; */
+    /* top: 0; */
+    /* left: 20px; */
+    /* border-radius: 2px; */
+    /* opacity: 200; */
+    /* transition: all 0.5s ease; */
+    /* z-index: -100;  */
+    /* text-decoration: red; */
 }
 
 .nav__items:hover p:after {
-    opacity: 1;
+    opacity: 100;
 }
 
 .nav__items i {
@@ -172,6 +202,7 @@ h4 {
 }
 
 .menu-item {
+    /* background-color: whitesmoke; */
     border-bottom: 1px solid #a1a6ac;
     text-align: center;
     color: #606469;
@@ -183,6 +214,7 @@ h4 {
 }
 
 .menu-item:hover {
+    /* background-color: whitesmoke; */
     border-bottom: 1px solid rgb(243, 206, 40);
     color: rgb(243, 206, 40);
 }
@@ -194,14 +226,16 @@ h4 {
 /* Note  */
 
 #note {
+    /* background-color: whitesmoke; */
     height: fit-content;
     padding: 10px;
-    border: 1px solid #bec1c3;
+    border: 1px solid #e3e8eb;
     border-radius: 10px;
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
 
 .text {
+    /* background-color: red; */
     display: block;
     max-width: 250px;
     word-break: break-all;
@@ -209,16 +243,19 @@ h4 {
 }
 
 .icons-container {
+    /* background-color: red; */
     display: flex;
-    padding: 5px;
+    padding: 2px;
 }
 
 .icons-container div {
+    background-color: whitesmoke;
     padding: 5px;
     cursor: pointer;
 }
 
 .note-icon {
+    background-color: whitesmoke;
     width: 17px;
     height: 17px;
     color: #252627;
@@ -227,68 +264,79 @@ h4 {
 
 /* Note  */
 .text h6{
+    background-color: whitesmoke;
     color: #5c5b5b;
 }
 .text h4{
     color: #000;
+    /* background-color: whitesmoke; */
 }
 
 
 /* Note form */
 
 .note-form-con {
+    /* height: 200px; */
+    /* width: 100%; */
+
     display: flex;
+    margin: 0px 40px ;
     justify-content: center;
     align-items: center;
     padding: 5px;
+    /* background-color: palegoldenrod; */
+    /* color: blue; */
 }
 
 .note-form {
-    opacity: 0.9;
-    width: 60%;
-    padding: 20px;
+    background-color: whitesmoke;
+    opacity: 1.9;
+    width: 100%;
+    padding: 10px;
     border-radius: 10px;
-    /* border: 1px solid black; */
-    /* box-shadow: 2px 3px 4px 2px #edf0f1; */
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    box-shadow: 2px 3px 4px 2px #edf0f1;
 }
-
+/* add title  and note in edit form */
+/* add icon for the app  */
 .edit-note-form {
-    opacity: 0.9;
+    /* opacity: 5.9; */
+    /* height: 600px; */
     width: 60%;
-    padding: 20px;
+    padding: 200px;
     border-radius: 10px;
 }
-
+/* edit form have to be changed since it is not supporting the same format */
 input::placeholder {
-    color: #4f5153;
+    /* background-color: whitesmoke; */
+    color: #252627;
 }
 
 textarea::placeholder {
-    color: #ccc;
+    /* background-color: whitesmoke; */
+    color: #252627;
 }
 
 textarea {
+    /* background-color: whitesmoke; */
     width: 100%;
     border: none;
     padding-top: 2px;
     display: block;
     outline: none;
-    color: #747970;
 }
 
 input {
+    /* background-color: whitesmoke; */
     width: 100%;
     border: none;
-    color: #383a3b;
 }
 
 .show {
     display: block;
-    background-color: #fff;
+    /* background-color: red; */
     border-radius: 10px;
     position: absolute;
-    box-shadow: 2px 3px 4px 2px #dfe4e7;
+    box-shadow: 2px 3px 4px 2px black;
 }
 
 .hide {
@@ -296,11 +344,12 @@ input {
 }
 
 .submit {
+    /* background-color: whitesmoke; */
     outline: none;
-    padding: 0px 15px;
+    padding: 0px 7px;
     border: none;
     border-radius: 10px;
-    background-color: #f3ce28;
+    background-color: rgb(243, 206, 40);
 }
 
 .submit:hover {
@@ -317,6 +366,7 @@ input {
 /* The Modal (background) */
 
 .modal {
+    /* background-color: whitesmoke; */
     display: none;
     z-index: 1;
     left: 0;
@@ -324,7 +374,7 @@ input {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #817f7f66;
+    background-color: rgba(129, 127, 127, 0.4);
 }
 
 
@@ -334,13 +384,15 @@ input {
 /* Check */
 
 .check {
+    /* background-color: whitesmoke; */
     display: flex;
     cursor: pointer;
     position: relative;
 }
 
 .check input {
-    background: #a1a6ac;
+    background-color: whitesmoke;
+    /* background: red; */
 }
 
 
@@ -350,26 +402,34 @@ input {
 /* Containers */
 
 .container {
+    /* background-color: red; */
     padding: 20px;
 }
 
 .container h2 {
     font-size: 17px;
-    color: #606469;
+    color: red;
+    background-color: whitesmoke;
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 3px 4px 2px pink;
+    margin: 40px;
 }
 
 .row {
-    padding: 20px 10px;
+    padding: 0px 100px;
 }
 
 .heading-con {
+    /* background-color: whitesmoke; */
     display: flex;
     justify-content: center;
-    margin: 25px 0px;
+    /* margin: 25px 110px; */
 }
 
 .heading-con h1 {
-    color: #606469;
+    /* background-color: whitesmoke; */
+    color:blueviolet;
 }
 
 
