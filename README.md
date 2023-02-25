@@ -5,7 +5,7 @@
 Note-Taking-App allows users to make different kinds of notes. Users can edit, delete and pin the notes. Users can also change the colors of any notes. One of the important feature is that users can search the note among multiple notes.
 
 
-## Screenshots
+## Preview
 ### [1] Home Page
 ![App Screenshot](https://github.com/RitikKumar202/notes-taking-app/blob/master/screenshots/Home.png?raw=true)
 
